@@ -3,7 +3,7 @@ import TitleContainer from "./TitleContainer/TitleContainer";
 import Description from "./Description/Description";
 import Content from "./Content/Content";
 
-function PetroleumEngineering() {
+function SoftwareTesting() {
 	return (
 		<>
 			<TitleContainer />
@@ -13,4 +13,4 @@ function PetroleumEngineering() {
 	);
 }
 
-export default PetroleumEngineering;
+export default SoftwareTesting;

@@ -1,7 +1,7 @@
 import React from "react";
 
 function TitleContainer() {
-	return <div>TitleContainer</div>;
+	return <div>SoftwareTestingTitleContainer</div>;
 }
 
 export default TitleContainer;

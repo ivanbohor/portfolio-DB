@@ -1,7 +1,14 @@
 import React from "react";
+import Title from "./Title/Title";
+import Arrow from "./Arrow/Arrow";
 
 function KnowMe() {
-	return <div>KnowMe</div>;
+	return (
+		<>
+			<Title />
+			<Arrow />
+		</>
+	);
 }
 
 export default KnowMe;

@@ -1,12 +1,20 @@
 import "./App.css";
+import Navbar from "./Components/Navbar/Navbar";
+import Home from "./Pages/Home/Home";
+import About from "./Pages/About/About";
+import PetroleumEngineering from "./Pages/PetroleumEngineering/PetroleumEngineering";
+import SoftwareTesting from "./Pages/SoftwareTesting/SoftwareTesting";
+import ContactMe from "./Pages/ContactMe/ContactMe";
 
 function App() {
 	return (
 		<div className='App'>
-			<header className='App-header'>
-				<p>PRUEBA</p>
-				<p>delete extras</p>
-			</header>
+			<Navbar />
+			<Home />
+			<About />
+			<PetroleumEngineering />
+			<SoftwareTesting />
+			<ContactMe />
 		</div>
 	);
 }

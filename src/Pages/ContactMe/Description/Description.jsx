@@ -1,7 +1,7 @@
 import React from "react";
 
 function Description() {
-	return <div>Description</div>;
+	return <div>ContactDescription</div>;
 }
 
 export default Description;

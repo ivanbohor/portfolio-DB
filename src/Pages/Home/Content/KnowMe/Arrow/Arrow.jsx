@@ -1,7 +1,7 @@
 import React from "react";
 
 function Arrow() {
-	return <div>Arrow</div>;
+	return <div>HomeContentKnowMeArrow</div>;
 }
 
 export default Arrow;

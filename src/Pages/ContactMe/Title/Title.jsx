@@ -1,7 +1,7 @@
 import React from "react";
 
 function Title() {
-	return <div>Title</div>;
+	return <div>ContactTitle</div>;
 }
 
 export default Title;
