@@ -5,11 +5,13 @@ import About from "./Pages/About/About";
 import PetroleumEngineering from "./Pages/PetroleumEngineering/PetroleumEngineering";
 import SoftwareTesting from "./Pages/SoftwareTesting/SoftwareTesting";
 import ContactMe from "./Pages/ContactMe/ContactMe";
+import IconsMedia from "./Components/IconsMedia/IconsMedia";
 
 function App() {
 	return (
 		<AppStyled>
 			<Navbar />
+			<IconsMedia />
 			<Home />
 			<About />
 			<PetroleumEngineering />
