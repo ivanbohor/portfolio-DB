@@ -24,9 +24,17 @@ const IconsContainer = styled.div`
 	justify-content: center;
 	align-items: center;
 	gap: 30px;
+	z-index: 999;
 `;
 
 const Imgs = styled.img`
 	width: 50px;
 	height: 50px;
+	cursor: pointer;
+	transition: all 0.2s linear;
+	:hover {
+		transition: all 0.2s linear;
+		padding-bottom: 5px;
+		transform: scale(1.2);
+	}
 `;
