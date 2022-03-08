@@ -1,15 +1,24 @@
-import React from "react";
+import React, { useContext } from "react";
 import styled from "styled-components";
 import imageLinkedin from "../../../Assets/linkedin.svg";
 import imageGithub from "../../../Assets/github.svg";
 import imageEmail from "../../../Assets/mail.svg";
+import openInNewTab from "../../../Helpers/openNewTab";
+import { SectionOnScreenContext } from "../../../Context/sectionOnScreen";
 
 function Icons() {
+	const { toggleContact } = useContext(SectionOnScreenContext);
 	return (
 		<IconsContainer>
-			<Imgs src={imageGithub} />
-			<Imgs src={imageLinkedin} />
-			<Imgs src={imageEmail} />
+			<Imgs
+				src={imageGithub}
+				onClick={() => openInNewTab("https://github.com/danielbarr3ra")}
+			/>
+			<Imgs
+				src={imageLinkedin}
+				onClick={() => openInNewTab("https://linkedin.com")}
+			/>
+			<Imgs src={imageEmail} onClick={toggleContact} />
 		</IconsContainer>
 	);
 }
