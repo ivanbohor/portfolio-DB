@@ -3,7 +3,7 @@ import Image from "./Image/Image";
 import Title from "./Title/Title";
 import Description from "./Description/Description";
 import Form from "./Form/Form";
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 
 function ContactMe() {
 	return (
@@ -20,17 +20,24 @@ function ContactMe() {
 
 export default ContactMe;
 
+const Fade = keyframes`
+	
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+
+`;
+
 const ContainerContact = styled.div`
 	width: 100%;
-	min-height: 100vh;
-	padding: 15px;
-	height: auto;
+	height: 90%;
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
 	flex-wrap: wrap;
 	align-items: center;
 	gap: 100px;
+	opacity: 0;
+	animation: ${Fade} 1.5s forwards;
 `;
 
 const TopContainer = styled.div`
