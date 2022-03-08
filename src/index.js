@@ -7,7 +7,7 @@ const GlobalStyle = createGlobalStyle`
 
      :root {
         --orangeLight : #F8971F;
-        --orangeLight40Percent : #f8961f62;
+        --orangeLight40Percent : rgba(248, 151, 31, 0.4);
         --orangeLigthBackgroundColor:##FBC27B;
         --orangeStrong : #BF5700;
         --orangeStrongBackgroundColor:#FFB151;
