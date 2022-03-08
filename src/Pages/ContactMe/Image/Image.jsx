@@ -10,6 +10,5 @@ function Image() {
 export default Image;
 
 const ImgContact = styled.img`
-	width: 350px;
-	height: 350px;
+	width: 70%;
 `;
