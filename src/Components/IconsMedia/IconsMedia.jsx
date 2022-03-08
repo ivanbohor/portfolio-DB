@@ -15,7 +15,7 @@ function IconsMedia() {
 export default IconsMedia;
 
 const IconsContainer = styled.div`
-	width: 150px;
+	width: 70px;
 	height: 100%;
 	position: fixed;
 	left: 0px;
