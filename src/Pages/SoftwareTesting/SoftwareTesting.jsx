@@ -24,8 +24,7 @@ const Fade = keyframes`
 `;
 
 const SoftwareContainer = styled.div`
-	width: 100%;
-	height: 90%;
+	width: 85%;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;

@@ -28,7 +28,7 @@ const Fade = keyframes`
 `;
 
 const ContainerContact = styled.div`
-	width: 90%;
+	width: 85%;
 	height: 90%;
 	display: flex;
 	flex-direction: row;

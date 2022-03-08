@@ -24,7 +24,7 @@ const Fade = keyframes`
 `;
 
 const PetroleumContainer = styled.div`
-	width: 100%;
+	width: 85%;
 	height: 90%;
 	display: flex;
 	flex-direction: column;
