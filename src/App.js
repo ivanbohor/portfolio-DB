@@ -1,13 +1,11 @@
 import Navbar from "./Components/Navbar/Navbar";
 import styled from "styled-components";
-import IconsMedia from "./Components/IconsMedia/IconsMedia";
 import Pages from "./Pages/Pages";
 
 function App() {
 	return (
 		<AppStyled>
 			<Navbar />
-			<IconsMedia />
 			<Pages />
 		</AppStyled>
 	);
