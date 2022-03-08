@@ -2,6 +2,7 @@ import React from "react";
 import { createGlobalStyle } from "styled-components";
 import ReactDOM from "react-dom";
 import App from "./App";
+import SectionOnScreenContextProvider from "./Context/sectionOnScreen";
 
 const GlobalStyle = createGlobalStyle`
 
@@ -36,7 +37,9 @@ const GlobalStyle = createGlobalStyle`
 ReactDOM.render(
 	<React.StrictMode>
 		<GlobalStyle />
-		<App />
+		<SectionOnScreenContextProvider>
+			<App />
+		</SectionOnScreenContextProvider>
 	</React.StrictMode>,
 	document.getElementById("root")
 );
