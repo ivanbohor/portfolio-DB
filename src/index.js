@@ -7,8 +7,10 @@ const GlobalStyle = createGlobalStyle`
 
      :root {
         --orangeLight : #F8971F;
-        --orangeLightSecond : #f8961f62;
+        --orangeLight40Percent : #f8961f62;
+        --orangeLigthBackgroundColor:##FBC27B;
         --orangeStrong : #BF5700;
+        --orangeStrongBackgroundColor:#FFB151;
         --grey :#808080;
         --greyLight :#8080807e;
         --bodyBackgroundColor : #E5E5E5;

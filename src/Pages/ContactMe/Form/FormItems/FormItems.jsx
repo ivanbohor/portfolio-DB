@@ -38,7 +38,7 @@ export default FormItems;
 const InputForm = styled.input`
 	width: 100%;
 	height: 45px;
-	background: var(--orangeLightSecond);
+	background: var(--orangeLight40Percent);
 	color: var(--grey);
 	padding-left: 10px;
 
@@ -64,7 +64,7 @@ const InputForm = styled.input`
 const TextAreaForm = styled.textarea`
 	width: 100%;
 	height: 150px;
-	background: var(--orangeLightSecond);
+	background: var(--orangeLight40Percent);
 	color: var(--grey);
 	border: none;
 	resize: none;
@@ -90,8 +90,8 @@ const TextAreaForm = styled.textarea`
 const SubmitContact = styled.button`
 	width: 100%;
 	height: 38px;
-	background: var(--orangeLightSecond);
-	color: var(--grey);
+	background: var(--orangeLight40Percent);
+	color: white;
 	border-radius: 5px;
 	transition: 0.2s linear;
 	cursor: pointer;
