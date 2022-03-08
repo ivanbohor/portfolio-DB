@@ -21,7 +21,7 @@ function ContactMe() {
 export default ContactMe;
 
 const ContainerContact = styled.div`
-	max-width: 90%;
+	width: 90%;
 	min-height: 100vh;
 	padding: 15px;
 	height: auto;
@@ -31,6 +31,7 @@ const ContainerContact = styled.div`
 	flex-wrap: wrap;
 	align-items: center;
 	gap: 100px;
+	background-color: green;
 `;
 
 const TopContainer = styled.div`
