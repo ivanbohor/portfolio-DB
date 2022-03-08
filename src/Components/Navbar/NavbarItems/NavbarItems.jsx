@@ -81,9 +81,10 @@ const Li = styled.li`
 		bottom: 0;
 		right: 0;
 		width: 0;
-		height: 1px;
+		height: ${({ border }) => (border ? "0" : "1px")};
 		background-color: var(--orangeStrong);
-		transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+		transition: ${({ border }) =>
+			border ? "none" : "width 0.6s cubic-bezier(0.25, 1, 0.5, 1)"};
 	}
 
 	:hover::before {
