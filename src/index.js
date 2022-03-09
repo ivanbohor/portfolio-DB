@@ -10,7 +10,7 @@ const GlobalStyle = createGlobalStyle`
         --orangeLight40Percent : rgba(248, 151, 31, 0.4);
         --orangeLigthBackgroundColor:#fbc27b;
         --orangeStrong : #BF5700;
-        --orangeStrongBackgroundColor:#ffb151;
+        --orangeStrongBackgroundColor:#FFB151;
         --grey :#808080;
         --greyLight :#8080807e;
         --bodyBackgroundColor : #E5E5E5;
@@ -25,6 +25,10 @@ const GlobalStyle = createGlobalStyle`
         box-sizing: border-box;
         scroll-behavior: smooth;
         cursor: default ;
+    }
+
+    body{
+        background-color: var(--bodyBackgroundColor) ;
     }
 
 `;

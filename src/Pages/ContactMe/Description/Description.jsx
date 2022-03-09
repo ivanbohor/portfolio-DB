@@ -24,7 +24,7 @@ const DescriptionContact = styled.div`
 	height: 50px;
 	color: var(--grey);
 	font-weight: 400;
-	font-size: calc(5px + 1.1vw);
+	font-size: calc(3px + 1vw);
 	font-family: var(--robotoFont);
 	text-align: center;
 	opacity: 0;

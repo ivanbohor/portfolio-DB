@@ -1,13 +1,20 @@
-import React from "react";
+import React, { useContext } from "react";
 import Image from "./Image/Image";
 import Title from "./Title/Title";
 import Description from "./Description/Description";
+import handleWheel from "../../Helpers/mouseWheelPages";
 import Form from "./Form/Form";
+import { SectionOnScreenContext } from "../../Context/sectionOnScreen";
 import styled, { keyframes } from "styled-components";
 
 function ContactMe() {
+	const { toggleHome, togglePetroleum } = useContext(SectionOnScreenContext);
+
 	return (
-		<ContainerContact id='contact'>
+		<ContainerContact
+			id='contact'
+			onWheel={(e) => handleWheel(e, toggleHome, togglePetroleum)}
+		>
 			<TopContainer>
 				<Image />
 				<Title />
@@ -29,13 +36,13 @@ const Fade = keyframes`
 
 const ContainerContact = styled.div`
 	width: 100%;
-	min-height: 100vh;
+	min-height: 94.5vh;
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
 	flex-wrap: wrap;
 	align-items: center;
-	gap: 100px;
+	gap: 60px;
 	opacity: 0;
 	animation: ${Fade} 1.5s forwards;
 `;

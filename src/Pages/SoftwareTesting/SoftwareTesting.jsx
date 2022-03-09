@@ -1,14 +1,17 @@
-import React from "react";
+import React, { useContext } from "react";
 import TitleContainer from "./TitleContainer/TitleContainer";
-import Description from "./Description/Description";
 import Content from "./Content/Content";
 import styled, { keyframes } from "styled-components";
+import { SectionOnScreenContext } from "../../Context/sectionOnScreen";
+import handleWheel from "../../Helpers/mouseWheelPages";
 
 function SoftwareTesting() {
+	const { togglePetroleum, toggleAbout } = useContext(SectionOnScreenContext);
 	return (
-		<SoftwareContainer>
+		<SoftwareContainer
+			onWheel={(e) => handleWheel(e, togglePetroleum, toggleAbout)}
+		>
 			<TitleContainer />
-			<Description />
 			<Content />
 		</SoftwareContainer>
 	);
@@ -25,12 +28,14 @@ const Fade = keyframes`
 
 const SoftwareContainer = styled.div`
 	width: 100%;
-	min-height: 100vh;
+	min-height: 94.5vh;
+	padding-top: 40px;
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
 	flex-wrap: wrap;
+	justify-content: flex-start;
 	align-items: center;
+	gap: 15px;
 	opacity: 0;
 	animation: ${Fade} 1.5s forwards;
 	background-color: var(--orangeLigthBackgroundColor);
