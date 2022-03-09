@@ -5,11 +5,10 @@ import App from "./App";
 import SectionOnScreenContextProvider from "./Context/sectionOnScreen";
 
 const GlobalStyle = createGlobalStyle`
-
      :root {
         --orangeLight : #F8971F;
         --orangeLight40Percent : rgba(248, 151, 31, 0.4);
-        --orangeLigthBackgroundColor:##FBC27B;
+        --orangeLigthBackgroundColor:#fbc27b;
         --orangeStrong : #BF5700;
         --orangeStrongBackgroundColor:#FFB151;
         --grey :#808080;
@@ -20,7 +19,6 @@ const GlobalStyle = createGlobalStyle`
 		--sanchezFont:'Sanchez', serif;
      }
 
-
     *{
         margin: 0;
         padding: 0;
@@ -29,9 +27,6 @@ const GlobalStyle = createGlobalStyle`
         cursor: default ;
     }
 
-    body{
-        background-color:var(--bodyBackgroundColor) ;
-    }
 `;
 
 ReactDOM.render(
