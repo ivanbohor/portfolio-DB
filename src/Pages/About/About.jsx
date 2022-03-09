@@ -1,12 +1,18 @@
-import React from "react";
+import React, { useContext } from "react";
 import Me from "./Me/Me";
 import Work from "./Work/Work";
 import Skills from "./Skills/Skills";
 import styled, { keyframes } from "styled-components";
+import handleWheel from "../../Helpers/mouseWheelPages";
+import { SectionOnScreenContext } from "../../Context/sectionOnScreen";
 
 function About() {
+	const { toggleHome, toggleSoftware } = useContext(SectionOnScreenContext);
+
 	return (
-		<AboutContainer>
+		<AboutContainer
+			onWheel={(e) => handleWheel(e, toggleSoftware, toggleHome)}
+		>
 			<Me />
 			<Work />
 			<Skills />
@@ -33,5 +39,4 @@ const AboutContainer = styled.div`
 	align-items: center;
 	opacity: 0;
 	animation: ${Fade} 1.5s forwards;
-	background-color: var(--orangeLigthBackgroundColor);
 `;
