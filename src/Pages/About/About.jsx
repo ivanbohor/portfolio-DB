@@ -24,8 +24,8 @@ const Fade = keyframes`
 `;
 
 const AboutContainer = styled.div`
-	height: 85%;
-	height: 90%;
+	width: 100%;
+	min-height: 100vh;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -33,4 +33,5 @@ const AboutContainer = styled.div`
 	align-items: center;
 	opacity: 0;
 	animation: ${Fade} 1.5s forwards;
+	background-color: var(--orangeLigthBackgroundColor);
 `;

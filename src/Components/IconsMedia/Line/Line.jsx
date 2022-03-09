@@ -1,14 +1,18 @@
-import React from "react";
+import React, { useContext } from "react";
 import styled from "styled-components";
+import { SectionOnScreenContext } from "../../../Context/sectionOnScreen";
 
 function Line() {
-	return <LineStyled></LineStyled>;
+	const { petroleum } = useContext(SectionOnScreenContext);
+	return <LineStyled bgColor={`${petroleum}`} />;
 }
 
 export default Line;
 
 const LineStyled = styled.div`
 	width: 1px;
-	height: 60%;
-	background-color: var(--orangeStrong);
+	height: 40%;
+	background-color: ${({ bgColor }) =>
+		bgColor === "true" ? "white" : "var(--orangeStrong)"};
+	z-index: 999;
 `;

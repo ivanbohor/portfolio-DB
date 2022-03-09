@@ -16,10 +16,10 @@ export default IconsMedia;
 
 const IconsContainer = styled.div`
 	width: 70px;
-	height: 100%;
-	position: fixed;
-	left: 0px;
-	bottom: 0px;
+	height: 900px;
+	position: absolute;
+	left: 75px;
+	top: 50px;
 	display: flex;
 	flex-direction: column;
 
