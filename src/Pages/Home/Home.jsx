@@ -34,4 +34,5 @@ const HomeContainer = styled.div`
 	align-items: center;
 	opacity: 0;
 	animation: ${Fade} 1.5s forwards;
+	background-color: var(--orangeLigthBackgroundColor);
 `;
