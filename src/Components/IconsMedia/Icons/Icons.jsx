@@ -3,22 +3,45 @@ import styled from "styled-components";
 import imageLinkedin from "../../../Assets/linkedin.svg";
 import imageGithub from "../../../Assets/github.svg";
 import imageEmail from "../../../Assets/mail.svg";
+import imageLinkedinWhite from "../../../Assets/linkedinWhite.svg";
+import imageGithubWhite from "../../../Assets/githubWhite.svg";
+import imageEmailWhite from "../../../Assets/mailWhite.svg";
 import openInNewTab from "../../../Helpers/openNewTab";
 import { SectionOnScreenContext } from "../../../Context/sectionOnScreen";
 
 function Icons() {
-	const { toggleContact } = useContext(SectionOnScreenContext);
+	const { toggleContact, petroleum } = useContext(SectionOnScreenContext);
 	return (
 		<IconsContainer>
-			<Imgs
-				src={imageGithub}
-				onClick={() => openInNewTab("https://github.com/danielbarr3ra")}
-			/>
-			<Imgs
-				src={imageLinkedin}
-				onClick={() => openInNewTab("https://linkedin.com")}
-			/>
-			<Imgs src={imageEmail} onClick={toggleContact} />
+			{petroleum ? (
+				<>
+					<Imgs
+						src={imageGithubWhite}
+						onClick={() =>
+							openInNewTab("https://github.com/danielbarr3ra")
+						}
+					/>
+					<Imgs
+						src={imageLinkedinWhite}
+						onClick={() => openInNewTab("https://linkedin.com")}
+					/>
+					<Imgs src={imageEmailWhite} onClick={toggleContact} />
+				</>
+			) : (
+				<>
+					<Imgs
+						src={imageGithub}
+						onClick={() =>
+							openInNewTab("https://github.com/danielbarr3ra")
+						}
+					/>
+					<Imgs
+						src={imageLinkedin}
+						onClick={() => openInNewTab("https://linkedin.com")}
+					/>
+					<Imgs src={imageEmail} onClick={toggleContact} />
+				</>
+			)}
 		</IconsContainer>
 	);
 }
