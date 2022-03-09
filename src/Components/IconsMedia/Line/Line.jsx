@@ -11,7 +11,7 @@ export default Line;
 
 const LineStyled = styled.div`
 	width: 1px;
-	height: 40%;
+	height: 70%;
 	background-color: ${({ bgColor }) =>
 		bgColor === "true" ? "white" : "var(--orangeStrong)"};
 	z-index: 999;
