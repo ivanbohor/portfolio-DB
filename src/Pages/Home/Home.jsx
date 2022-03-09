@@ -25,7 +25,8 @@ const Fade = keyframes`
 `;
 
 const HomeContainer = styled.div`
-	height: 85%;
+	width: 100%;
+	min-height: 100vh;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
