@@ -1,14 +1,20 @@
-import React from "react";
-import TitleContainer from "./TitleContainer/TitleContainer";
-import Description from "./Description/Description";
-import Content from "./Content/Content";
+import React, { useContext } from "react";
 import styled, { keyframes } from "styled-components";
+import TitleContainer from "./TitleContainer/TitleContainer";
+import Content from "./Content/Content";
+import { SectionOnScreenContext } from "../../Context/sectionOnScreen";
+import handleWheel from "../../Helpers/mouseWheelPages";
 
 function PetroleumEngineering() {
+	const { toggleContact, toggleSoftware } = useContext(
+		SectionOnScreenContext
+	);
+
 	return (
-		<PetroleumContainer>
+		<PetroleumContainer
+			onWheel={(e) => handleWheel(e, toggleContact, toggleSoftware)}
+		>
 			<TitleContainer />
-			<Description />
 			<Content />
 		</PetroleumContainer>
 	);
@@ -25,13 +31,15 @@ const Fade = keyframes`
 
 const PetroleumContainer = styled.div`
 	width: 100%;
-	min-height: 100vh;
+	min-height: 94.5vh;
+	padding-top: 40px;
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
 	flex-wrap: wrap;
+	justify-content: flex-start;
 	align-items: center;
+	gap: 15px;
 	opacity: 0;
 	animation: ${Fade} 1.5s forwards;
-	background-color: var(--orangeStrongBackgroundColor);
+	background-color: #ffb151;
 `;
