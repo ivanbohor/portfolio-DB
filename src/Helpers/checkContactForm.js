@@ -1,6 +1,12 @@
 import sendMessage from "./sendMessage";
 
-function checkContactForm(name, email, body) {
+function checkContactForm(
+	name = "",
+	email = "",
+	body = "",
+	toggleSent,
+	toggleShow
+) {
 	if (
 		name === "" ||
 		email === "" ||
@@ -9,10 +15,13 @@ function checkContactForm(name, email, body) {
 		email.includes("@") === false ||
 		email.includes(".com") === false
 	) {
-		console.log("ERROR CAMPOS INCORRECTOS");
+		toggleShow();
+		console.log("ERROR");
 	} else {
 		sendMessage(name, email, body);
-		console.log("ENVIADO");
+		toggleSent();
+		toggleShow();
+		console.log("Envio");
 	}
 }
 export default checkContactForm;
