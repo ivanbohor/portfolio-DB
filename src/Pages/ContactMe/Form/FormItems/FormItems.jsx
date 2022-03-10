@@ -2,14 +2,14 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import checkContactForm from "../../../../Helpers/checkContactForm";
 
-function FormItems() {
+function FormItems({ toggleSent, toggleShow }) {
 	const [name, setName] = useState();
 	const [email, setEmail] = useState();
 	const [body, setBody] = useState();
 
 	const clickSubmit = (e) => {
 		e.preventDefault();
-		checkContactForm(name, email, body);
+		checkContactForm(name, email, body, toggleSent, toggleShow);
 	};
 
 	return (
@@ -46,6 +46,7 @@ const InputForm = styled.input`
 	transition: 0.2s linear;
 
 	font-size: 18px;
+	border-bottom: 1px solid var(--orangeStrong);
 
 	:focus {
 		outline: none;
@@ -71,6 +72,7 @@ const TextAreaForm = styled.textarea`
 	transition: 0.2s linear;
 	padding: 10px 10px;
 	font-size: 18px;
+	border-bottom: 1px solid var(--orangeStrong);
 
 	:hover {
 		transition: 0.2s linear;
@@ -95,7 +97,8 @@ const SubmitContact = styled.button`
 	border-radius: 5px;
 	transition: 0.2s linear;
 	cursor: pointer;
-	border: 1px solid #808080;
+	border: none;
+	border-bottom: 1px solid var(--orangeStrong);
 
 	:hover {
 		transition: 0.2s linear;

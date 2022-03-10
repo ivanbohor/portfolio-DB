@@ -1,18 +1,11 @@
 import React from "react";
 import styled, { keyframes } from "styled-components";
 
-import FormItems from "./FormItems/FormItems";
-
-function Form({ toggleSent, toggleShow }) {
-	return (
-		<FormContact>
-			<FormItems toggleSent={toggleSent} toggleShow={toggleShow} />
-		</FormContact>
-	);
+function MessageSend() {
+	return <SendContainer>Message sent successfully</SendContainer>;
 }
 
-export default Form;
-
+export default MessageSend;
 const Fade = keyframes`
 	
     0% {opacity: 0;}
@@ -20,10 +13,10 @@ const Fade = keyframes`
 
 `;
 
-const FormContact = styled.form`
+const SendContainer = styled.form`
 	width: 600px;
 	height: 340px;
-	padding: 15px 0px;
+	margin: 15px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -31,9 +24,16 @@ const FormContact = styled.form`
 	gap: 10px;
 	opacity: 0;
 	animation: ${Fade} 1s forwards;
+	background-color: var(--orangeLigthBackgroundColor);
+	border-radius: 10px;
+	font-size: 25px;
+	color: var(--orangeStrong);
+	letter-spacing: 0.5px;
+	font-family: var(--sanchezFont);
+	border-bottom: 2px solid var(--orangeStrong);
 	padding-bottom: 10px;
 	@media screen and (max-width: 640px) {
 		max-width: 600px;
-		padding: 15px 15px;
+		font-size: 20px;
 	}
 `;
