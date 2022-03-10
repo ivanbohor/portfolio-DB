@@ -14,8 +14,10 @@ function PetroleumEngineering() {
 		<PetroleumContainer
 			onWheel={(e) => handleWheel(e, toggleContact, toggleSoftware)}
 		>
-			<TitleContainer />
-			<Content />
+			<ContentContainer>
+				<TitleContainer />
+				<Content />
+			</ContentContainer>
 		</PetroleumContainer>
 	);
 }
@@ -31,7 +33,7 @@ const Fade = keyframes`
 
 const PetroleumContainer = styled.div`
 	width: 100%;
-	min-height: 94.5vh;
+	min-height: 100vh;
 	padding-top: 40px;
 	display: flex;
 	flex-direction: column;
@@ -42,4 +44,13 @@ const PetroleumContainer = styled.div`
 	opacity: 0;
 	animation: ${Fade} 1.5s forwards;
 	background-color: #ffb151;
+`;
+
+const ContentContainer = styled.div`
+	max-width: 1045px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 15px;
 `;

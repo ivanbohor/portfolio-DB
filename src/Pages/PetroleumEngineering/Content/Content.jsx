@@ -35,15 +35,7 @@ function Content() {
 					Proyects
 				</Button>
 			</ButtonsContainer>
-			{experience ? (
-				<ExperienceContainer>
-					<ExperienceContent />
-				</ExperienceContainer>
-			) : (
-				<ProyectsContainer>
-					<ProyectsContent />
-				</ProyectsContainer>
-			)}
+			{experience ? <ExperienceContent /> : <ProyectsContent />}
 		</ContentContainer>
 	);
 }
@@ -51,13 +43,13 @@ function Content() {
 export default Content;
 
 const ContentContainer = styled.div`
-	width: 1170px;
+	width: 100%;
 	height: auto;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	gap: 40px;
+	gap: 20px;
 `;
 
 const ButtonsContainer = styled.div`
@@ -82,22 +74,11 @@ const Button = styled.button`
 	padding: 12px 0px;
 	border-bottom: ${({ border }) =>
 		border === "true" ? "2px solid var(--orangeStrong)" : "none"};
-`;
 
-const ExperienceContainer = styled.div`
-	width: 100%;
-	height: auto;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-`;
-
-const ProyectsContainer = styled.div`
-	width: 100%;
-	height: auto;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+	@media screen and (max-width: 1080px) {
+		font-size: 25px;
+	}
+	@media screen and (max-width: 500px) {
+		font-size: 20px;
+	}
 `;

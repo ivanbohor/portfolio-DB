@@ -55,26 +55,37 @@ export default ExperienceContent;
 
 const ExpContainer = styled.div`
 	width: 100%;
+	height: 100%;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	gap: 5px;
+	gap: 20px;
+	padding-bottom: 10px;
 `;
 
 const ExpDetail = styled.div`
 	width: 100%;
-	height: 230px;
+	height: 100%;
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
-	gap: 25px;
+	gap: 15px;
 `;
 
 const Img = styled.img`
-	width: 200px;
-	height: 200px;
+	width: 150px;
+	height: 150px;
+	padding-left: 5px;
+	@media screen and (max-width: 1080px) {
+		width: 125px;
+		height: 125px;
+	}
+	@media screen and (max-width: 500px) {
+		width: 100px;
+		height: 100px;
+	}
 `;
 
 const InfoContainer = styled.div`
@@ -93,7 +104,13 @@ const TitleExp = styled.div`
 	font-family: var(--trispaceFont);
 	font-weight: 400;
 	font-size: 30px;
-	color: white;
+	color: var(--grey);
+	@media screen and (max-width: 1080px) {
+		font-size: 20px;
+	}
+	@media screen and (max-width: 500px) {
+		font-size: 15px;
+	}
 `;
 
 const DateExp = styled.div`
@@ -103,19 +120,33 @@ const DateExp = styled.div`
 	color: white;
 	font-size: 20px;
 	font-weight: 400;
+	@media screen and (max-width: 1080px) {
+		font-size: 20px;
+	}
+	@media screen and (max-width: 500px) {
+		font-size: 10px;
+	}
 `;
 
 const ItemsExp = styled.ul`
 	width: 100%;
 	text-align: start;
 	padding-left: 20px;
+	@media screen and (max-width: 1080px) {
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+	}
 `;
 
 const Bullets = styled.li`
-	width: 85%;
+	width: 95%;
 	text-align: start;
 	font-family: var(--robotoFont);
 	color: white;
 	font-size: 18px;
 	font-weight: 300;
+	@media screen and (max-width: 1080px) {
+		font-size: 15px;
+	}
 `;

@@ -9,6 +9,14 @@ function Image() {
 export default Image;
 
 const Img = styled.img`
-	width: 280px;
-	height: 280px;
+	width: 300px;
+	height: 300px;
+	@media screen and (max-width: 1080px) {
+		width: 200px;
+		height: 200px;
+	}
+	@media screen and (max-width: 500px) {
+		width: 120px;
+		height: 120px;
+	}
 `;
