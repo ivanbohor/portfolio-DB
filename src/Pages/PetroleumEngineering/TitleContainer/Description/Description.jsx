@@ -21,4 +21,7 @@ const DescriptionStyled = styled.div`
 	font-weight: 400;
 	font-size: 18px;
 	text-align: start;
+	@media screen and (max-width: 1080px) {
+		display: none;
+	}
 `;

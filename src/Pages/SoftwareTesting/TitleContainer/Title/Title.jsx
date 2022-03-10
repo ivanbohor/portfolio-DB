@@ -20,13 +20,19 @@ const TitleContainer = styled.div`
 const TitleStyled = styled.div`
 	font-weight: 600;
 	font-family: var(--robotoFont);
-	font-size: 70px;
+	font-size: 65px;
 	color: var(--orangeStrong);
+	@media screen and (max-width: 500px) {
+		font-size: 40px;
+	}
 `;
 
 const SubtitleStyled = styled.div`
 	font-weight: 400;
 	font-family: var(--robotoFont);
-	font-size: 40px;
+	font-size: 35px;
 	color: var(--orangeStrong);
+	@media screen and (max-width: 500px) {
+		font-size: 20px;
+	}
 `;

@@ -1,14 +1,26 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import Image from "./Image/Image";
 import Title from "./Title/Title";
 import Description from "./Description/Description";
 import handleWheel from "../../Helpers/mouseWheelPages";
 import Form from "./Form/Form";
+import MessageSend from "./Messages/MessageSend/MessageSend";
+import MessageError from "./Messages/MessageError/MessageError";
 import { SectionOnScreenContext } from "../../Context/sectionOnScreen";
 import styled, { keyframes } from "styled-components";
 
 function ContactMe() {
 	const { toggleHome, togglePetroleum } = useContext(SectionOnScreenContext);
+	const [sent, setSent] = useState(false);
+	const [showForm, setShowForm] = useState(true);
+
+	const toggleSent = () => {
+		setSent(!sent);
+	};
+
+	const toggleShow = () => {
+		setShowForm(!showForm);
+	};
 
 	return (
 		<ContainerContact
@@ -20,7 +32,13 @@ function ContactMe() {
 				<Title />
 				<Description />
 			</TopContainer>
-			<Form />
+			{showForm ? (
+				<Form toggleSent={toggleSent} toggleShow={toggleShow} />
+			) : sent ? (
+				<MessageSend />
+			) : (
+				<MessageError toggleShow={toggleShow} />
+			)}
 		</ContainerContact>
 	);
 }

@@ -1,11 +1,13 @@
 import Navbar from "./Components/Navbar/Navbar";
 import styled from "styled-components";
 import Pages from "./Pages/Pages";
+import NavbarResponsive from "./Components/NavbarResponsive/NavbarResponsive";
 
 function App() {
 	return (
 		<AppStyled>
 			<Navbar />
+			<NavbarResponsive />
 			<Pages />
 		</AppStyled>
 	);

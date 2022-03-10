@@ -24,9 +24,12 @@ const DescriptionContact = styled.div`
 	height: 50px;
 	color: var(--grey);
 	font-weight: 400;
-	font-size: calc(3px + 1vw);
+	font-size: 18px;
 	font-family: var(--robotoFont);
 	text-align: center;
 	opacity: 0;
 	animation: ${Fade} 3s forwards;
+	@media screen and (max-width: 450px) {
+		font-size: 16px;
+	}
 `;

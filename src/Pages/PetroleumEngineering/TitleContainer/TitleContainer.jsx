@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import Description from "./Description/Description";
+import DescriptionResponsive from "./Description/DescriptionResponsive";
 import Image from "./Image/Image";
 import Title from "./Title/Title";
 
@@ -12,6 +13,7 @@ function TitleContainer() {
 				<Title />
 				<Description />
 			</SubContainer>
+			<DescriptionResponsive />
 		</ContainerStyled>
 	);
 }
@@ -19,21 +21,26 @@ function TitleContainer() {
 export default TitleContainer;
 
 const ContainerStyled = styled.div`
-	width: auto;
-	height: 250px;
+	width: 100%;
 	display: flex;
+	flex-wrap: wrap;
 	flex-direction: row;
-	justify-content: center;
+	justify-content: space-between;
 	align-items: center;
-	gap: 40px;
+	gap: 20px;
+	@media screen and (max-width: 1080px) {
+		justify-content: space-evenly;
+	}
 `;
 
 const SubContainer = styled.div`
-	width: 100%;
-	height: 100px;
+	width: auto;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: flex-start;
-	gap: 40px;
+	gap: 25px;
+	@media screen and (max-width: 500px) {
+		gap: 5px;
+	}
 `;

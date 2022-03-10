@@ -33,4 +33,7 @@ const IconsContainer = styled.div`
 	align-items: center;
 	animation: ${Fade} 4s forwards;
 	z-index: 900;
+	@media screen and (max-width: 1400px) {
+		display: none;
+	}
 `;

@@ -11,6 +11,7 @@ const GlobalStyle = createGlobalStyle`
         --orangeLigthBackgroundColor:#fbc27b;
         --orangeStrong : #BF5700;
         --orangeStrongBackgroundColor:#FFB151;
+        --NavbarResponsiveColor :#F8971F;
         --grey :#808080;
         --greyLight :#8080807e;
         --bodyBackgroundColor : #E5E5E5;
@@ -29,6 +30,11 @@ const GlobalStyle = createGlobalStyle`
 
     body{
         background-color: var(--bodyBackgroundColor) ;
+        overflow: hidden;
+
+        @media screen and (max-width: 1200px) {
+		    overflow: visible;
+    	}
     }
 
 `;
