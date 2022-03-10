@@ -11,8 +11,10 @@ function SoftwareTesting() {
 		<SoftwareContainer
 			onWheel={(e) => handleWheel(e, togglePetroleum, toggleAbout)}
 		>
-			<TitleContainer />
-			<Content />
+			<ContentContainer>
+				<TitleContainer />
+				<Content />
+			</ContentContainer>
 		</SoftwareContainer>
 	);
 }
@@ -28,7 +30,7 @@ const Fade = keyframes`
 
 const SoftwareContainer = styled.div`
 	width: 100%;
-	min-height: 94.5vh;
+	min-height: 100vh;
 	padding-top: 40px;
 	display: flex;
 	flex-direction: column;
@@ -39,4 +41,13 @@ const SoftwareContainer = styled.div`
 	opacity: 0;
 	animation: ${Fade} 1.5s forwards;
 	background-color: var(--orangeLigthBackgroundColor);
+`;
+
+const ContentContainer = styled.div`
+	max-width: 1045px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 15px;
 `;
