@@ -18,11 +18,17 @@ const GlobalStyle = createGlobalStyle`
         --robotoFont : 'Roboto', sans-serif;
         --trispaceFont: 'Trispace', sans-serif;
 		--sanchezFont:'Sanchez', serif;
+        --NavbarHeight : 50px;
      }
 
-    *{
+     body,
+    html,
+    * {
         margin: 0;
         padding: 0;
+    }
+
+    *{
         box-sizing: border-box;
         scroll-behavior: smooth;
         cursor: default ;
@@ -30,11 +36,6 @@ const GlobalStyle = createGlobalStyle`
 
     body{
         background-color: var(--bodyBackgroundColor) ;
-        overflow: hidden;
-
-        @media screen and (max-width: 1200px) {
-		    overflow: visible;
-    	}
     }
 
 `;

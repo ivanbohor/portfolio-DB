@@ -51,7 +51,7 @@ function NavbarResponsiveItems({ toggleShow }) {
 				}}
 				border={petroleum}
 			>
-				<ALink>Petroleum Engineering_</ALink>
+				<SmallLink>Petroleum Engineering_</SmallLink>
 			</Li>
 			<Buttons bgColor='transparent' onClick={toggleShow}>
 				Resume
@@ -74,14 +74,13 @@ export default NavbarResponsiveItems;
 
 const Ul = styled.ul`
 	width: 100%;
+	padding-top: 15px;
 
 	display: flex;
 	flex-direction: column;
 
 	justify-content: flex-start;
 	align-items: flex-start;
-	padding-left: 25px;
-	padding-top: 30px;
 
 	flex-wrap: nowrap;
 	gap: 40px;
@@ -95,6 +94,7 @@ const ALink = styled.a`
 const Li = styled.li`
 	width: 207px;
 	height: 35px;
+	padding-left: 15px;
 	line-height: 35px;
 	list-style: none;
 	color: white;
@@ -131,6 +131,10 @@ const SpeciaLink = styled(ALink)`
 	font-size: 24px;
 `;
 
+const SmallLink = styled(ALink)`
+	font-size: 16px;
+`;
+
 const Buttons = styled.button`
 	width: 207px;
 	height: 38px;
@@ -145,4 +149,5 @@ const Buttons = styled.button`
 	border: ${({ border }) => border || "3px solid var(--orangeStrong)"};
 
 	cursor: pointer;
+	align-self: center;
 `;

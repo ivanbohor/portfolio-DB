@@ -14,7 +14,7 @@ export default Navbar;
 
 const NavbarStyled = styled.nav`
 	width: 100%;
-	height: 50px;
+	height: var(--NavbarHeight);
 	position: sticky;
 	top: 0px;
 	z-index: 999;

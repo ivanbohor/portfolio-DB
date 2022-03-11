@@ -33,7 +33,7 @@ const Fade = keyframes`
 
 const PetroleumContainer = styled.div`
 	width: 100%;
-	min-height: 100vh;
+	min-height: calc(100vh - var(--NavbarHeight));
 	padding-top: 40px;
 	display: flex;
 	flex-direction: column;

@@ -41,16 +41,20 @@ function NavbarResponsive() {
 export default NavbarResponsive;
 
 const NavbarStyled = styled.div`
+	width: 300px;
+	height: calc(100vh - var(--NavbarHeight));
+
+	bottom: 0px;
+	left: 0px;
+
+	padding-bottom: 5px;
+
+	position: absolute;
 	display: none;
 	flex-direction: column;
 	justify-content: space-between;
 	align-items: center;
-	padding: 25px 0px;
-	position: absolute;
-	top: 0px;
-	left: 0px;
-	width: 300px;
-	height: 100vh;
+
 	z-index: 1001;
 	background-color: var(--NavbarResponsiveColor);
 	@media screen and (max-width: 1400px) {
@@ -68,7 +72,7 @@ const BlackContainer = styled.div`
 
 const TopBar = styled.div`
 	width: 100%;
-	height: 50px;
+	height: var(--NavbarHeight);
 	padding: 0px 20px;
 	top: 0px;
 	position: sticky;
