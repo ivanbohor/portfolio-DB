@@ -9,8 +9,8 @@ function Image() {
 export default Image;
 
 const Img = styled.img`
-	width: 300px;
-	height: 300px;
+	width: 250px;
+	height: 250px;
 	@media screen and (max-width: 1080px) {
 		width: 200px;
 		height: 200px;

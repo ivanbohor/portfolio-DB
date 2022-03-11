@@ -75,8 +75,8 @@ const ExpDetail = styled.div`
 `;
 
 const Img = styled.img`
-	width: 150px;
-	height: 150px;
+	width: 125px;
+	height: 125px;
 	padding-left: 5px;
 	@media screen and (max-width: 1080px) {
 		width: 125px;
@@ -103,7 +103,7 @@ const TitleExp = styled.div`
 	text-align: start;
 	font-family: var(--trispaceFont);
 	font-weight: 400;
-	font-size: 30px;
+	font-size: 28px;
 	color: var(--grey);
 	@media screen and (max-width: 1080px) {
 		font-size: 20px;
@@ -118,7 +118,7 @@ const DateExp = styled.div`
 	text-align: start;
 	font-family: var(--robotoFont);
 	color: white;
-	font-size: 20px;
+	font-size: 18px;
 	font-weight: 400;
 	@media screen and (max-width: 1080px) {
 		font-size: 20px;
@@ -132,11 +132,9 @@ const ItemsExp = styled.ul`
 	width: 100%;
 	text-align: start;
 	padding-left: 20px;
-	@media screen and (max-width: 1080px) {
-		display: flex;
-		flex-direction: column;
-		gap: 10px;
-	}
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
 `;
 
 const Bullets = styled.li`
@@ -144,9 +142,9 @@ const Bullets = styled.li`
 	text-align: start;
 	font-family: var(--robotoFont);
 	color: white;
-	font-size: 18px;
+	font-size: 16px;
 	font-weight: 300;
 	@media screen and (max-width: 1080px) {
-		font-size: 15px;
+		font-size: 14px;
 	}
 `;

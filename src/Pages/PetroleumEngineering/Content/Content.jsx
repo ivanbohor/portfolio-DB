@@ -64,7 +64,7 @@ const Button = styled.button`
 	width: 50%;
 	font-family: var(--robotoFont);
 	font-weight: 500;
-	font-size: 30px;
+	font-size: 28px;
 	cursor: pointer;
 	text-align: center;
 	color: ${({ color }) =>

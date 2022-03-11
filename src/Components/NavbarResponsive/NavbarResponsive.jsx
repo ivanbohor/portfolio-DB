@@ -68,7 +68,7 @@ const BlackContainer = styled.div`
 
 const TopBar = styled.div`
 	width: 100%;
-	height: 50px;
+	height: var(--NavbarHeight);
 	padding: 0px 20px;
 	top: 0px;
 	position: sticky;

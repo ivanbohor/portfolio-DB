@@ -51,7 +51,7 @@ function NavbarResponsiveItems({ toggleShow }) {
 				}}
 				border={petroleum}
 			>
-				<ALink>Petroleum Engineering_</ALink>
+				<SmallLink>Petroleum Engineering_</SmallLink>
 			</Li>
 			<Buttons bgColor='transparent' onClick={toggleShow}>
 				Resume
@@ -129,6 +129,10 @@ const Li = styled.li`
 const SpeciaLink = styled(ALink)`
 	font-family: var() (--sanchezFont);
 	font-size: 24px;
+`;
+
+const SmallLink = styled(ALink)`
+	font-size: 16px;
 `;
 
 const Buttons = styled.button`
