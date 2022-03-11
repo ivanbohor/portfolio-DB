@@ -54,7 +54,7 @@ const Fade = keyframes`
 
 const ContainerContact = styled.div`
 	width: 100%;
-	min-height: 94.5vh;
+	min-height: calc(100vh - var(--NavbarHeight));
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
