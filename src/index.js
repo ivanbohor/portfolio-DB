@@ -36,10 +36,6 @@ const GlobalStyle = createGlobalStyle`
 
     body{
         background-color: var(--bodyBackgroundColor) ;
-
-        @media screen and (max-width: 1200px) {
-		    overflow: visible;
-    	}
     }
 
 `;
