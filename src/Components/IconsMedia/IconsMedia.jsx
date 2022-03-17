@@ -1,11 +1,14 @@
-import React from "react";
+import React, { useContext, useState } from "react";
 import styled, { keyframes } from "styled-components";
+import { SectionOnScreenContext } from "../../Context/sectionOnScreen";
 import Icons from "./Icons/Icons";
 import Line from "./Line/Line";
 
 function IconsMedia() {
+	const { home } = useContext(SectionOnScreenContext);
+
 	return (
-		<IconsContainer>
+		<IconsContainer show={home}>
 			<Line />
 			<Icons />
 		</IconsContainer>
@@ -33,15 +36,18 @@ const IconsContainer = styled.div`
 	align-items: center;
 	animation: ${Fade} 4s forwards;
 	z-index: 900;
+	@media screen and (max-width: 1400px) {
+		display: ${({ show }) => (show ? "flex" : "none")};
+	}
+
 	@media screen and (max-width: 1080px) {
 		width: 39.81px;
 		height: 613px;
-		top:245px;
-		left:58px;
-
+		top: 245px;
+		left: 58px;
 	}
 	@media screen and (max-width: 500px) {
-		left:0.6rem;
+		left: 0.6rem;
 		top: 222px;
 	}
 `;
