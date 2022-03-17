@@ -15,4 +15,9 @@ const LineStyled = styled.div`
 	background-color: ${({ bgColor }) =>
 		bgColor === "true" ? "white" : "var(--orangeStrong)"};
 	z-index: 999;
-`;
+	@media screen and (max-width: 1080px) {
+		
+	}
+	@media screen and (max-width: 500px) {
+		height: 49%;
+		`;

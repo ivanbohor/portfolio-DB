@@ -25,7 +25,7 @@ const IconsContainer = styled.div`
 	width: 70px;
 	height: 700px;
 	position: absolute;
-	left: 75px;
+	left: 72px;
 	top: 100px;
 	display: flex;
 	flex-direction: column;
@@ -33,7 +33,15 @@ const IconsContainer = styled.div`
 	align-items: center;
 	animation: ${Fade} 4s forwards;
 	z-index: 900;
-	@media screen and (max-width: 1400px) {
-		display: none;
+	@media screen and (max-width: 1080px) {
+		width: 39.81px;
+		height: 613px;
+		top:245px;
+		left:58px;
+
+	}
+	@media screen and (max-width: 500px) {
+		left:0.6rem;
+		top: 222px;
 	}
 `;

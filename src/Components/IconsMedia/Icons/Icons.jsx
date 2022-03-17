@@ -57,6 +57,11 @@ const IconsContainer = styled.div`
 	align-items: center;
 	gap: 30px;
 	z-index: 999;
+	@media screen and (max-width: 1080px) {
+		
+	}
+	@media screen and (max-width: 500px) {
+		height: 51%;
 `;
 
 const Imgs = styled.img`
@@ -69,4 +74,13 @@ const Imgs = styled.img`
 		padding-bottom: 5px;
 		transform: scale(1.2);
 	}
+
+	@media screen and (max-width: 1080px) {
+		width:39.81px;
+		height: 39.81px;
+		
+	}
+	@media screen and (max-width: 500px) {
+		width: 30px;
+		height: 30px;
 `;
