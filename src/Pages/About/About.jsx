@@ -31,7 +31,8 @@ const Fade = keyframes`
 
 const AboutContainer = styled.div`
 	width: 100%;
-	min-height: 100vh;
+	min-height: 60vh;
+	max-width: 1045px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -39,4 +40,5 @@ const AboutContainer = styled.div`
 	align-items: center;
 	opacity: 0;
 	animation: ${Fade} 1.5s forwards;
+	padding-top:2rem;
 `;

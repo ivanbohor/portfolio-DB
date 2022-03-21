@@ -24,11 +24,27 @@ function Icons() {
 const ImgIcon = styled.img`
 width: 77px;
 height: 77px;
+@media screen and (max-width: 1080px) {
+	width: 72px;
+	height: 72px;
+}
+@media screen and (max-width: 500px) {
+	width: 51px;
+	height: 51px;
  
 `
 const ContainerIcons =styled.div`
 display:flex;
 gap:75px;
 margin-bottom:1rem;
+@media screen and (max-width: 1080px) {
+	gap:55px;
+	flex-wrap: wrap;
+
+}
+@media screen and (max-width: 500px) {
+	gap:35px;
+	flex-flow: wrap;
+
 `
 export default Icons;

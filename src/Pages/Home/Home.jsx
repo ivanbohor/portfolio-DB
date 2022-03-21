@@ -75,7 +75,7 @@ const HomeContainer = styled.div`
 		
 	}
 	@media screen and (max-width: 500px) {
-		min-height: 72vh;
+		min-height: 68vh;
 	}
 `;
 
@@ -85,7 +85,7 @@ margin-top: 2rem;
 @media screen and (max-width: 1080px) {
 	
 }
-@media screen and (max-width: 500px) {
+@media screen and (min-width: 500px) {
 margin-top: -1rem;
 }
 `

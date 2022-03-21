@@ -17,9 +17,19 @@ font-style: normal;
 font-weight: 400;
 font-size: 20px;
 line-height: 23px;
-
 color: #808080;
-
+@media screen and (max-width: 1080px) {
+	width: 347px;
+height: 144px;
+font-size: 18px;
+line-height: 21px;
+}
+@media screen and (max-width: 500px) {
+	width: 155px;
+	height: 144px;
+	font-size: 12px;
+	line-height: 14px;
+}
 `
 
 export default Description;

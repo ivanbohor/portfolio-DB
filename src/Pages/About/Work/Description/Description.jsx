@@ -21,6 +21,21 @@ line-height: 23px;
 text-align: right;
 
 color: #808080;
+@media screen and (max-width: 1080px) {
+	width: 342px;
+height: 142px;
+font-size: 18px;
+line-height: 21px;
+text-align: center;
+}
+@media screen and (max-width: 500px) {
+	width: 154px;
+height: 144px;
+font-size: 12px;
+line-height: 14px;
+text-align: start;
+
+
 
 `
 export default Description;

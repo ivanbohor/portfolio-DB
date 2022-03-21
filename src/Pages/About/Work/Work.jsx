@@ -18,14 +18,22 @@ function Work() {
 	);
 }
 const  ContainerText=styled.div`
-width: 245px;
-height: 231px;
+width: auto;
 
 `
 const ContainerWork= styled.div`
 display :flex;
 flex-direction: row-reverse;
-gap:8rem;
+width:100%;
+place-self: self-start;
+@media screen and (max-width: 1080px) {
+	padding-top: 1rem;
+}
+@media screen and (max-width: 500px) {
+	gap:2rem;
+	margin-top:2rem;
+	padding-bottom:2rem;
+
 
 `
 

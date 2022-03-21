@@ -17,7 +17,13 @@ const ContainerSkills = styled.div`
 display:block;
 flex-direction: column;
 flex-flow: wrap;
-align-self: center;
-margin-right:12rem;
+align-self: flex-start;
+margin-top: 3rem;
+@media screen and (max-width: 1080px) {
+	padding-left: 1rem;
+}
+@media screen and (max-width: 500px) {
+	padding-left: 1rem;
+
 `
 export default Skills;
