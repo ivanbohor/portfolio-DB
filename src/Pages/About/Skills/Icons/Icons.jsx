@@ -22,29 +22,29 @@ function Icons() {
 			</ContainerIcons>);
 }
 const ImgIcon = styled.img`
-width: 77px;
-height: 77px;
+object-fit: contain;
+width: 100%;
+max-height: 100px;
+transition:transform 450ms;
 @media screen and (max-width: 1080px) {
-	width: 72px;
-	height: 72px;
+	
 }
 @media screen and (max-width: 500px) {
-	width: 51px;
-	height: 51px;
+	
  
 `
 const ContainerIcons =styled.div`
 display:flex;
-gap:75px;
-margin-bottom:1rem;
+gap:80px;
+
+
 @media screen and (max-width: 1080px) {
-	gap:55px;
-	flex-wrap: wrap;
+	gap:36px;
+
 
 }
 @media screen and (max-width: 500px) {
-	gap:35px;
-	flex-flow: wrap;
-
+	overflow-y: hidden;
+	overflow-x:scroll;
 `
 export default Icons;

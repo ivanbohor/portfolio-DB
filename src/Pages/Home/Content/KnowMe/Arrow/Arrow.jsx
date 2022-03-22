@@ -14,6 +14,7 @@ function Arrow() {
 const ImgM = styled.img`
 width:32px;
 height:48px;
+margin-top: 3rem;
 @media screen and (min-width: 1080px) {
 	display:none;
 }`
@@ -21,6 +22,7 @@ const  Img = styled.img `
 width:32px;
 height:48px;
 margin-top: 1rem;
+
 @media screen and (max-width: 1080px) {
 	display:none;
 }

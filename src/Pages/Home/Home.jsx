@@ -6,7 +6,6 @@ import { SectionOnScreenContext } from "../../Context/sectionOnScreen";
 import Title from "./Title/Title";
 import Description from "./Content/Description/Description";
 import Image from "./Content/Image/Image";
-import Arrow from "./Content/KnowMe/Arrow/Arrow";
 import KnowMe from "./Content/KnowMe/KnowMe";
 
 function Home() {
@@ -31,12 +30,10 @@ function Home() {
 }
 
 export default Home;
-
 const ContainerHome = styled.div`
 max-width: 1045px;
 
 `
-
 const ContentContainer =styled.div`
 display:flex;
 justify-content: flex-start;
@@ -53,12 +50,10 @@ align-items: center;
 
 }
 `
-
 const Fade = keyframes`
     0% {opacity: 0;}
     100% {opacity: 1;}
 `;
-
 const HomeContainer = styled.div`
 	width: 100%;
 	min-height: 68vh ;

@@ -24,6 +24,7 @@ margin-top: 3rem;
 }
 @media screen and (max-width: 500px) {
 	padding-left: 1rem;
+	max-width:100%;
 
 `
 export default Skills;

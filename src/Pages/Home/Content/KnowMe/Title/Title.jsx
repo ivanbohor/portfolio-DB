@@ -18,7 +18,6 @@ margin-top: 2.5rem;
 @media screen and (max-width: 500px) {
 	font-size: 20px;
 	line-height: 23px;
-	margin-right: 1rem;
-	margin-top: -2rem;
+	margin-top: -1rem;
 `
 export default Title;
