@@ -6,8 +6,8 @@ function Description() {
 	return (
 	<ContainerDescription>
 		<DescriptionStyled>
-		Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-		Nuncasdas vulputate libero et velit interdum, ac aliquet odio mattis. 
+		There is no such thing as big problems, they are just the opportunity to innovate.
+
 		</DescriptionStyled>
 	</ContainerDescription>
 	)
