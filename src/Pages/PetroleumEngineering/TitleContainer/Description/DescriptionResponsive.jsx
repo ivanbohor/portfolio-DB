@@ -4,9 +4,8 @@ import styled from "styled-components";
 function Description() {
 	return (
 		<DescriptionStyled>
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-			vulputate libero et velit interdum, ac aliquet odio mattis.Lorem
-			ipsum dolor sit ame
+			I graduated from the University of Texas at Austin in 2020 earning
+			B.Sc in petroleum engineering and a minor in business with a 3.6 GPA
 		</DescriptionStyled>
 	);
 }
