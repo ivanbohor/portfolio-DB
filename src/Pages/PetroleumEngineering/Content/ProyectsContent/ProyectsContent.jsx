@@ -32,7 +32,7 @@ function ProyectsContent() {
 						>
 							Final Report
 						</ButtonMoreText>
-						<img src={imgArrow} alt='arrow' />
+						<ImgP src={imgArrow} alt='arrow' />
 					</ButtonMore>
 					<ButtonMore>
 						<ButtonMoreText
@@ -75,16 +75,12 @@ const ExpDetail = styled.div`
 	gap: 15px;
 `;
 
-const Img = styled.img`
+const ImgP = styled.img`
 	width: 250px;
 	width: 350px;
-	@media screen and (max-width: 1080px) {
+	@media screen and (max-width: 500px) {
 		width: 125px;
 		height: 125px;
-	}
-	@media screen and (max-width: 500px) {
-		width: 100px;
-		height: 100px;
 	}
 `;
 
