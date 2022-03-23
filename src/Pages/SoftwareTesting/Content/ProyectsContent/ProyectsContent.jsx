@@ -66,6 +66,8 @@ const ExpDetail = styled.div`
 `;
 
 const Img = styled.img`
+	align-self: flex-start;
+
 	width: 250px;
 	@media screen and (max-width: 1080px) {
 		width: 125px;

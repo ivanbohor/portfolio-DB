@@ -75,6 +75,7 @@ const ExpDetail = styled.div`
 `;
 
 const Img = styled.img`
+	align-self: flex-start;
 	width: 125px;
 	height: 125px;
 	padding-left: 5px;

@@ -52,6 +52,8 @@ const ExpDetail = styled.div`
 `;
 
 const Img = styled.img`
+	align-self: flex-start;
+
 	width: 150px;
 	height: 150px;
 	padding-left: 5px;
