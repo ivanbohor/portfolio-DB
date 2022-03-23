@@ -31,7 +31,7 @@ function ExperienceContent() {
 export default ExperienceContent;
 
 const ExpContainer = styled.div`
-	width: 100%;
+	width: 97%;
 	height: 100%;
 	display: flex;
 	flex-direction: column;
