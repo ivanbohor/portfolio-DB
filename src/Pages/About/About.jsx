@@ -12,6 +12,7 @@ function About() {
 	return (
 		<AboutContainer
 			onWheel={(e) => handleWheel(e, toggleSoftware, toggleHome)}
+			id='about'
 		>
 			<Me />
 			<Work />
@@ -40,5 +41,5 @@ const AboutContainer = styled.div`
 	align-items: center;
 	opacity: 0;
 	animation: ${Fade} 1.5s forwards;
-	padding-top:2rem;
+	padding-top: 2rem;
 `;
