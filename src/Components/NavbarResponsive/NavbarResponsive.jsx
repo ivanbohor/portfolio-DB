@@ -57,7 +57,7 @@ const NavbarStyled = styled.div`
 
 	z-index: 1001;
 	background-color: var(--NavbarResponsiveColor);
-	@media screen and (max-width: 1400px) {
+	@media screen and (max-width: 1150px) {
 		display: flex;
 	}
 `;
@@ -82,7 +82,7 @@ const TopBar = styled.div`
 	align-items: center;
 	background-color: var(--NavbarResponsiveColor);
 	z-index: 1000;
-	@media screen and (max-width: 1400px) {
+	@media screen and (max-width: 1150px) {
 		display: flex;
 	}
 `;

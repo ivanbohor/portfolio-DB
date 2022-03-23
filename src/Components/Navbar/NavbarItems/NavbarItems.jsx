@@ -14,6 +14,7 @@ function NavbarItems() {
 		toggleSoftware,
 		togglePetroleum,
 		toggleContact,
+		toggleResume,
 	} = useContext(SectionOnScreenContext);
 	return (
 		<Ul>
@@ -29,7 +30,11 @@ function NavbarItems() {
 			<Li onClick={togglePetroleum} border={petroleum}>
 				<ALink>Petroleum Engineering_</ALink>
 			</Li>
-			<ButtonResume bgColor='transparent' href={DanielBarrera} download>
+			<ButtonResume
+				bgColor='transparent'
+				onClick={toggleResume}
+				//  href={DanielBarrera} download
+			>
 				Resume
 			</ButtonResume>
 			<Buttons border='none' color='white' onClick={toggleContact}>
@@ -71,12 +76,15 @@ const Li = styled.li`
 	color: var(--orangeStrong);
 	font-family: var(--sanchezFont);
 	font-weight: 400;
-	font-size: 18px;
+	font-size: 16px;
 	text-align: center;
 	cursor: pointer;
 	border-bottom: ${({ border }) =>
 		border ? "1px solid var(--orangeStrong)" : "none"};
 	position: relative;
+	@media screen and (max-width: 1400px) {
+		font-size: 12px;
+	}
 
 	::before {
 		content: "";
@@ -111,11 +119,15 @@ const Buttons = styled.button`
 	border: ${({ border }) => border || "3px solid var(--orangeStrong)"};
 
 	cursor: pointer;
+	@media screen and (max-width: 1400px) {
+		font-size: 18px;
+	}
 `;
 
 const ButtonResume = styled.a`
 	width: 154px;
 	height: 38px;
+	line-height: 30px;
 	border-radius: 20px;
 
 	font-family: var(--robotoFont);
@@ -128,4 +140,7 @@ const ButtonResume = styled.a`
 	text-decoration: none;
 	text-align: center;
 	cursor: pointer;
+	@media screen and (max-width: 1400px) {
+		font-size: 18px;
+	}
 `;
