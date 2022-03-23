@@ -10,6 +10,7 @@ function SoftwareTesting() {
 	return (
 		<SoftwareContainer
 			onWheel={(e) => handleWheel(e, togglePetroleum, toggleAbout)}
+			id='software'
 		>
 			<ContentContainer>
 				<TitleContainer />
