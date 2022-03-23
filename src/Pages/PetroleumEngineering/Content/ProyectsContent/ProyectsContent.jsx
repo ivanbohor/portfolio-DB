@@ -8,7 +8,7 @@ function ProyectsContent() {
 	return (
 		<ExpContainer>
 			<ExpDetail>
-				<Img src={imgExp} />
+				<ImgP src={imgExp} />
 				<InfoContainer>
 					<TitleExp> Senior Thesis</TitleExp>
 					<DateExp> January 2020 - May 2020 </DateExp>
@@ -32,7 +32,7 @@ function ProyectsContent() {
 						>
 							Final Report
 						</ButtonMoreText>
-						<ImgP src={imgArrow} alt='arrow' />
+						<img src={imgArrow} alt='arrow' />
 					</ButtonMore>
 					<ButtonMore>
 						<ButtonMoreText
@@ -76,6 +76,7 @@ const ExpDetail = styled.div`
 `;
 
 const ImgP = styled.img`
+	align-self: flex-start;
 	width: 250px;
 	width: 350px;
 	@media screen and (max-width: 500px) {
