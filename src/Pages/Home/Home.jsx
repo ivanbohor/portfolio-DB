@@ -38,6 +38,7 @@ const ContentContainer =styled.div`
 display:flex;
 justify-content: flex-start;
 align-items: center;
+column-gap: 6rem;
 @media screen and (max-width: 1080px) {
 	font-size: 25px;
 			flex-direction: column;
@@ -70,7 +71,7 @@ const HomeContainer = styled.div`
 		
 	}
 	@media screen and (max-width: 500px) {
-		min-height: 68vh;
+		min-height: 60vh;
 	}
 `;
 
@@ -81,6 +82,5 @@ margin-top: 2rem;
 	
 }
 @media screen and (min-width: 500px) {
-margin-top: -1rem;
 }
 `
