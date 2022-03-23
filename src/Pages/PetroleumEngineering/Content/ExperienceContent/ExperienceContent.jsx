@@ -104,7 +104,7 @@ const TitleExp = styled.div`
 	font-family: var(--trispaceFont);
 	font-weight: 400;
 	font-size: 28px;
-	color: var(--grey);
+	color: white;
 	@media screen and (max-width: 1080px) {
 		font-size: 20px;
 	}

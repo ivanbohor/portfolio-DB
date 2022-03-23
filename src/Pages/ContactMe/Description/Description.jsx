@@ -4,8 +4,7 @@ import styled, { keyframes } from "styled-components";
 function Description() {
 	return (
 		<DescriptionContact>
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-			vulputate libero et velit interdum, ac aliquet odio mattis.
+			I look forward to hearing from you
 		</DescriptionContact>
 	);
 }

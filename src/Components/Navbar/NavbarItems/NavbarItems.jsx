@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import styled from "styled-components";
 import { SectionOnScreenContext } from "../../../Context/sectionOnScreen";
+import DanielBarrera from "../../../Assets/DanielBarrera.pdf";
 
 function NavbarItems() {
 	const {
@@ -28,7 +29,9 @@ function NavbarItems() {
 			<Li onClick={togglePetroleum} border={petroleum}>
 				<ALink>Petroleum Engineering_</ALink>
 			</Li>
-			<Buttons bgColor='transparent'>Resume</Buttons>
+			<ButtonResume bgColor='transparent' href={DanielBarrera} download>
+				Resume
+			</ButtonResume>
 			<Buttons border='none' color='white' onClick={toggleContact}>
 				Contact
 			</Buttons>
@@ -107,5 +110,22 @@ const Buttons = styled.button`
 	background-color: ${({ bgColor }) => bgColor || "var(--orangeStrong)"};
 	border: ${({ border }) => border || "3px solid var(--orangeStrong)"};
 
+	cursor: pointer;
+`;
+
+const ButtonResume = styled.a`
+	width: 154px;
+	height: 38px;
+	border-radius: 20px;
+
+	font-family: var(--robotoFont);
+	font-weight: 400;
+	font-size: 24px;
+
+	color: ${({ color }) => color || "var(--orangeStrong)"};
+	background-color: ${({ bgColor }) => bgColor || "var(--orangeStrong)"};
+	border: ${({ border }) => border || "3px solid var(--orangeStrong)"};
+	text-decoration: none;
+	text-align: center;
 	cursor: pointer;
 `;
