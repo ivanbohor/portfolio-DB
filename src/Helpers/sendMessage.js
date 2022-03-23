@@ -1,5 +1,5 @@
 function sendMessage(name, email, body) {
-	fetch("https://formsubmit.co/ajax/PONERMAIL", {
+	fetch("https://formsubmit.co/ajax/daniel.er.barrera@gmail.com", {
 		method: "POST",
 		headers: {
 			"Content-Type": "application/json",
