@@ -25,9 +25,10 @@ const ContainerStyled = styled.div`
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: row;
-	justify-content: space-between;
+	justify-content: flex-start;
 	align-items: center;
-	gap: 20px;
+	gap: 60px;
+
 	@media screen and (max-width: 1080px) {
 		justify-content: space-evenly;
 	}

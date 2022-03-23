@@ -4,10 +4,7 @@ import styled from "styled-components";
 function Description() {
 	return (
 		<DescriptionStyled>
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-			vulputate libero et velit interdum, ac aliquet odio mattis.Lorem
-			ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate
-			libero et velit interdum, ac aliquet odio mattis.
+			I have been working as a QA engineer since february 2021.
 		</DescriptionStyled>
 	);
 }
