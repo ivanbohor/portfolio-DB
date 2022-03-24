@@ -18,9 +18,11 @@ display:block;
 flex-direction: column;
 flex-flow: wrap;
 align-self: flex-start;
-margin-top: 3rem;
+margin-top: 2rem;
 @media screen and (max-width: 1080px) {
 	padding-left: 1rem;
+	margin-top: 0rem;
+
 }
 @media screen and (max-width: 500px) {
 	padding-left: 1rem;

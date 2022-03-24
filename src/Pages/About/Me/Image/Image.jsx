@@ -13,22 +13,28 @@ function Image() {
 }
 
 const ContainerImg= styled.div`
-width: 316.14px;
-height: 310.28px;
+width: 402.48px;
+height: 395.03px;
 @media screen and (max-width: 1080px) {
+
 }
 @media screen and (max-width: 500px) {
-width: 181.06px;
+width: 195.06px;
 height: 191.45px;
+margin-top:6rem;
+
 `
 const Img = styled.img`
+width: inherit;
 @media screen and (max-width: 1080px) {
-	width: 275.78px;
-	height: 270.67px;
+	width: 290.78px;
+	height: 280.67px;
+	margin-top: 3rem;
 }
 @media screen and (max-width: 500px) {
 	width: inherit;
-	width: 181.06px;
-height: 191.45px;
+	width: 185px;
+	height: 191px;
+	margin-top: 0rem;
 	`
 export default Image;

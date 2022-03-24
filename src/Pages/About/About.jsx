@@ -14,7 +14,6 @@ function About() {
 			onWheel={(e) => handleWheel(e, toggleSoftware, toggleHome)}
 		>
 			<Me />
-			<Work />
 			<Skills />
 		</AboutContainer>
 	);

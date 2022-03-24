@@ -8,12 +8,13 @@ function Me() {
 	return (
 		<>
 		<ContainerMe> 
+		<Title />
 			<ContainerText> 
-				<Title />
 				<Description />
+				<Image />
 			</ContainerText>
-			<Image />
 		</ContainerMe>
+
 		</>
 	);
 }
@@ -21,27 +22,30 @@ function Me() {
 const ContainerText= styled.div`
 margin-right:2.5rem;
 padding-left: 1rem;
+display:flex;
+column-gap: 7rem;
 @media screen and (max-width: 1080px) {
+	column-gap: 7rem;
 }
 @media screen and (max-width: 500px) {
-	margin-right:1.5rem;
+	column-gap: 2rem;
+	margin-right:0rem;
+padding-left: 1rem;
 
 `
 const ContainerMe = styled.div`
-display :flex;
-gap:10rem;
+display :block;
+gap:6rem;
 width:100%;
 margin-right:12rem;
 @media screen and (max-width: 1080px) {
-	gap:4rem;
+	gap:0rem;
 
 }
 @media screen and (max-width: 500px) {
-	width:auto;
+	width:100%;
+	height:573px;
 	margin-right:0rem;
 	gap:0rem;
-
-
-
 `
 export default Me;
