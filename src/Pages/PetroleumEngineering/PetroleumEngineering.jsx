@@ -6,13 +6,12 @@ import { SectionOnScreenContext } from "../../Context/sectionOnScreen";
 import handleWheel from "../../Helpers/mouseWheelPages";
 
 function PetroleumEngineering() {
-	const { toggleContact, toggleSoftware } = useContext(
-		SectionOnScreenContext
-	);
+	const { toggleResume, toggleSoftware } = useContext(SectionOnScreenContext);
 
 	return (
 		<PetroleumContainer
-			onWheel={(e) => handleWheel(e, toggleContact, toggleSoftware)}
+			onWheel={(e) => handleWheel(e, toggleResume, toggleSoftware)}
+			id='petroleum'
 		>
 			<ContentContainer>
 				<TitleContainer />

@@ -45,7 +45,7 @@ function ProyectsContent() {
 export default ProyectsContent;
 
 const ExpContainer = styled.div`
-	width: 100%;
+	width: 97%;
 	height: 100%;
 	display: flex;
 	flex-direction: column;
@@ -66,13 +66,15 @@ const ExpDetail = styled.div`
 `;
 
 const Img = styled.img`
+	align-self: flex-start;
+
 	width: 250px;
 	@media screen and (max-width: 1080px) {
 		width: 125px;
 		height: 125px;
 	}
 	@media screen and (max-width: 500px) {
-		width: 200px;
+		width: 100px;
 	}
 `;
 

@@ -32,7 +32,7 @@ function Content() {
 					border={`${proyects}`}
 					onClick={handleClickProyects}
 				>
-					Proyects
+					Projects
 				</Button>
 			</ButtonsContainer>
 			{experience ? <ExperienceContent /> : <ProyectsContent />}

@@ -18,7 +18,7 @@ const NavbarStyled = styled.nav`
 	position: sticky;
 	top: 0px;
 	z-index: 999;
-	@media screen and (max-width: 1400px) {
+	@media screen and (max-width: 1150px) {
 		display: none;
 	}
 `;

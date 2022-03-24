@@ -1,71 +1,58 @@
-import React, { useContext } from "react";
+import React from "react";
 import styled from "styled-components";
-import { SectionOnScreenContext } from "../../../Context/sectionOnScreen";
 
 function NavbarResponsiveItems({ toggleShow }) {
-	const {
-		home,
-		about,
-		software,
-		petroleum,
-		toggleHome,
-		toggleAbout,
-		toggleSoftware,
-		togglePetroleum,
-		toggleContact,
-	} = useContext(SectionOnScreenContext);
-
 	return (
 		<Ul>
 			<Li
 				onClick={() => {
-					toggleHome();
 					toggleShow();
 				}}
-				border={home}
 			>
-				<SpeciaLink>Get To Know Me</SpeciaLink>
+				<SpeciaLink href='#home'>Get To Know Me</SpeciaLink>
 			</Li>
 			<Li
 				onClick={() => {
-					toggleAbout();
 					toggleShow();
 				}}
-				border={about}
 			>
-				<ALink>About_</ALink>
+				<RegularLink href='#about'>About_</RegularLink>
 			</Li>
 			<Li
 				onClick={() => {
-					toggleSoftware();
 					toggleShow();
 				}}
-				border={software}
 			>
-				<ALink>Software Testing_</ALink>
+				<RegularLink href='#software'>Software Testing_</RegularLink>
 			</Li>
 			<Li
 				onClick={() => {
-					togglePetroleum();
 					toggleShow();
 				}}
-				border={petroleum}
 			>
-				<SmallLink>Petroleum Engineering_</SmallLink>
+				<RegularLink href='#petroleum'>
+					Petroleum Engineering_
+				</RegularLink>
 			</Li>
-			<Buttons bgColor='transparent' onClick={toggleShow}>
+			<ButtonLink
+				bgColor='transparent'
+				onClick={() => {
+					toggleShow();
+				}}
+				href='#resume'
+			>
 				Resume
-			</Buttons>
-			<Buttons
+			</ButtonLink>
+			<ButtonLink
 				border='none'
 				color='white'
 				onClick={() => {
-					toggleContact();
 					toggleShow();
 				}}
+				href='#contact'
 			>
 				Contact
-			</Buttons>
+			</ButtonLink>
 		</Ul>
 	);
 }
@@ -89,6 +76,9 @@ const Ul = styled.ul`
 const ALink = styled.a`
 	text-decoration: none;
 	cursor: pointer;
+	:visited {
+		color: white;
+	}
 `;
 
 const Li = styled.li`
@@ -131,13 +121,14 @@ const SpeciaLink = styled(ALink)`
 	font-size: 24px;
 `;
 
-const SmallLink = styled(ALink)`
+const RegularLink = styled(ALink)`
+	color: white;
 	font-size: 16px;
 `;
-
-const Buttons = styled.button`
+const ButtonLink = styled(ALink)`
 	width: 207px;
 	height: 38px;
+	line-height: 34px;
 	border-radius: 20px;
 
 	font-family: var(--robotoFont);
@@ -150,4 +141,9 @@ const Buttons = styled.button`
 
 	cursor: pointer;
 	align-self: center;
+	text-align: center;
+`;
+
+const SmallLink = styled(ALink)`
+	font-size: 16px;
 `;

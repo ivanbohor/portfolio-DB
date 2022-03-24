@@ -8,9 +8,9 @@ function ContactButton({ close }) {
 	return (
 		<ButtonStyled
 			onClick={() => {
-				toggleContact();
 				close();
 			}}
+			href='#contact'
 		>
 			Contact
 		</ButtonStyled>
@@ -19,10 +19,11 @@ function ContactButton({ close }) {
 
 export default ContactButton;
 
-const ButtonStyled = styled.button`
+const ButtonStyled = styled.a`
 	display: none;
 	width: 100px;
 	height: 30px;
+	line-height: 30px;
 	background-color: var(--orangeStrong);
 	border: none;
 
@@ -34,6 +35,11 @@ const ButtonStyled = styled.button`
 	color: white;
 	z-index: 1000;
 	cursor: pointer;
+	text-align: center;
+	text-decoration: none;
+	:visited {
+		color: white;
+	}
 
 	@media screen and (max-width: 1400px) {
 		display: unset;

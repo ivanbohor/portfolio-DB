@@ -7,6 +7,7 @@ const SectionOnScreenContextProvider = ({ children }) => {
 	const [about, setAbout] = useState(false);
 	const [software, setSoftware] = useState(false);
 	const [petroleum, setPetroleum] = useState(false);
+	const [resume, setResume] = useState(false);
 	const [contact, setContact] = useState(false);
 
 	const toggleHome = () => {
@@ -14,6 +15,7 @@ const SectionOnScreenContextProvider = ({ children }) => {
 		setAbout(false);
 		setSoftware(false);
 		setPetroleum(false);
+		setResume(false);
 		setContact(false);
 	};
 
@@ -22,6 +24,7 @@ const SectionOnScreenContextProvider = ({ children }) => {
 		setAbout(true);
 		setSoftware(false);
 		setPetroleum(false);
+		setResume(false);
 		setContact(false);
 	};
 
@@ -30,6 +33,7 @@ const SectionOnScreenContextProvider = ({ children }) => {
 		setAbout(false);
 		setSoftware(true);
 		setPetroleum(false);
+		setResume(false);
 		setContact(false);
 	};
 
@@ -38,6 +42,15 @@ const SectionOnScreenContextProvider = ({ children }) => {
 		setAbout(false);
 		setSoftware(false);
 		setPetroleum(true);
+		setResume(false);
+		setContact(false);
+	};
+	const toggleResume = () => {
+		setHome(false);
+		setAbout(false);
+		setSoftware(false);
+		setPetroleum(false);
+		setResume(true);
 		setContact(false);
 	};
 
@@ -46,6 +59,7 @@ const SectionOnScreenContextProvider = ({ children }) => {
 		setAbout(false);
 		setSoftware(false);
 		setPetroleum(false);
+		setResume(false);
 		setContact(true);
 	};
 
@@ -56,11 +70,13 @@ const SectionOnScreenContextProvider = ({ children }) => {
 				about,
 				software,
 				petroleum,
+				resume,
 				contact,
 				toggleHome,
 				toggleAbout,
 				toggleSoftware,
 				togglePetroleum,
+				toggleResume,
 				toggleContact,
 			}}
 		>

@@ -10,7 +10,7 @@ import { SectionOnScreenContext } from "../../Context/sectionOnScreen";
 import styled, { keyframes } from "styled-components";
 
 function ContactMe() {
-	const { toggleHome, togglePetroleum } = useContext(SectionOnScreenContext);
+	const { toggleHome, toggleResume } = useContext(SectionOnScreenContext);
 	const [sent, setSent] = useState(false);
 	const [showForm, setShowForm] = useState(true);
 
@@ -25,7 +25,7 @@ function ContactMe() {
 	return (
 		<ContainerContact
 			id='contact'
-			onWheel={(e) => handleWheel(e, toggleHome, togglePetroleum)}
+			onWheel={(e) => handleWheel(e, toggleHome, toggleResume)}
 		>
 			<TopContainer>
 				<Image />

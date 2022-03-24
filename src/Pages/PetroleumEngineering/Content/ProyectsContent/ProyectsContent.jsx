@@ -8,7 +8,7 @@ function ProyectsContent() {
 	return (
 		<ExpContainer>
 			<ExpDetail>
-				<Img src={imgExp} />
+				<ImgP src={imgExp} />
 				<InfoContainer>
 					<TitleExp> Senior Thesis</TitleExp>
 					<DateExp> January 2020 - May 2020 </DateExp>
@@ -55,7 +55,7 @@ function ProyectsContent() {
 export default ProyectsContent;
 
 const ExpContainer = styled.div`
-	width: 100%;
+	width: 97%;
 	height: 100%;
 	display: flex;
 	flex-direction: column;
@@ -75,16 +75,13 @@ const ExpDetail = styled.div`
 	gap: 15px;
 `;
 
-const Img = styled.img`
+const ImgP = styled.img`
+	align-self: flex-start;
 	width: 250px;
 	width: 350px;
-	@media screen and (max-width: 1080px) {
+	@media screen and (max-width: 500px) {
 		width: 125px;
 		height: 125px;
-	}
-	@media screen and (max-width: 500px) {
-		width: 100px;
-		height: 100px;
 	}
 `;
 
