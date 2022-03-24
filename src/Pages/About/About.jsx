@@ -15,7 +15,6 @@ function About() {
 			id='about'
 		>
 			<Me />
-			<Work />
 			<Skills />
 		</AboutContainer>
 	);
